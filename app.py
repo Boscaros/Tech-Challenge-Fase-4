@@ -51,9 +51,6 @@ plt.xlabel('Data')
 plt.ylabel('Preço')
 plt.title('Preço ao longo dos anos')
 
-st.plotly_chart(plt)
-# plt.show()  # Removido porque st.pyplot será usado
-
 st.pyplot(plt)
 
 st.markdown("<hr>", unsafe_allow_html=True)
