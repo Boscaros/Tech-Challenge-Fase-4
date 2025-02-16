@@ -85,4 +85,4 @@ class MinMaxWithFeatNames(BaseEstimator,TransformerMixin):
             return df
 
 
-url_predicao = "https://github.com/Boscaros/Previs-o-Preco-Petr-leo/blob/e379755906aa0ce1db78c4823236d85df75ebd76/previs%C3%A3o%20preco%20petroleo.png"
+url_predicao = "https://raw.githubusercontent.com/Boscaros/Tech-Challenge-Fase-4/refs/heads/main/previs%C3%A3o%20preco%20petroleo.png"
