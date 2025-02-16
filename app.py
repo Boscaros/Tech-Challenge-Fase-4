@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
+import matplotlib.pyplot as plt 
 import subprocess
 import urllib.request
 import requests
@@ -46,9 +46,10 @@ df_filtrado = df[(df['data'] >= data_inicial) & (df['data'] <= data_final)]
 x = df_filtrado['data']
 y = df_filtrado['preco']
 
-fig = px.line(df_filtrado, x='data', y='preco', markers=True, 
-              labels={'data': 'Data', 'preco': 'Preço'},
-              title='Preço ao longo dos anos')
+plt.plot(df_filtrado['data'], df_filtrado['preco'], marker='o')
+plt.xlabel('Data')
+plt.ylabel('Preço')
+plt.title('Preço ao longo dos anos')
 
 st.plotly_chart(fig)
 # plt.show()  # Removido porque st.pyplot será usado
